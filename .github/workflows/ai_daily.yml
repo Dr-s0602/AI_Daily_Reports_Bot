@@ -33,6 +33,13 @@ jobs:
         run: |
           python scripts/daily_ai_report.py
 
+      - name: Mirror to Google Drive
+        env:
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+          GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+        run: |
+          python scripts/upload_to_drive.py
+
       - name: Commit and push reports
         run: |
           git config user.name "github-actions"
