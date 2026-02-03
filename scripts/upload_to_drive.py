@@ -1,40 +1,30 @@
-import os
-import json
+import os, json
 from pathlib import Path
-from google.oauth2.service_account import Credentials
+from datetime import datetime, timedelta, timezone
+
+from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
-
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
 
-
 def get_drive_service():
-    sa_json = os.environ.get("GCP_SA_KEY_JSON")
-    if not sa_json:
-        raise RuntimeError("GCP_SA_KEY_JSON 환경변수가 없습니다. GitHub Secrets에 추가하세요.")
-
-    sa_info = json.loads(sa_json)
-    creds = Credentials.from_service_account_info(sa_info, scopes=SCOPES)
+    token_json = os.environ.get("GDRIVE_OAUTH_TOKEN_JSON")
+    if not token_json:
+        raise RuntimeError("GDRIVE_OAUTH_TOKEN_JSON이 없습니다. GitHub Secrets에 추가하세요.")
+    creds = Credentials.from_authorized_user_info(json.loads(token_json), scopes=SCOPES)
     return build("drive", "v3", credentials=creds)
 
-def upload_if_not_exists(service, folder_id: str, local_path: Path):
-    """
-    같은 파일명이 Drive 폴더에 이미 있으면 업로드 스킵.
-    없을 때만 create.
-    """
-    file_name = local_path.name
-
-    # 폴더 내 동일 파일명 검색
-    q = (
-        f"'{folder_id}' in parents and "
-        f"name = '{file_name}' and "
-        f"trashed = false"
-    )
-    res = service.files().list(q=q, fields="files(id, name)").execute()
+def file_exists_in_folder(service, folder_id: str, file_name: str):
+    q = f"'{folder_id}' in parents and name = '{file_name}' and trashed = false"
+    res = service.files().list(q=q, fields="files(id,name)").execute()
     files = res.get("files", [])
+    return (files[0]["id"] if files else None)
 
-    if files:
+def upload_if_not_exists(service, folder_id: str, local_path: Path):
+    file_name = local_path.name
+    existed_id = file_exists_in_folder(service, folder_id, file_name)
+    if existed_id:
         return "skipped", file_name
 
     media = MediaFileUpload(str(local_path), resumable=True)
@@ -42,57 +32,38 @@ def upload_if_not_exists(service, folder_id: str, local_path: Path):
     service.files().create(body=metadata, media_body=media, fields="id").execute()
     return "created", file_name
 
-
-def upload_or_update_file(service, folder_id: str, local_path: Path):
-    """
-    같은 파일명이 Drive 폴더에 있으면 update, 없으면 create.
-    """
-    file_name = local_path.name
-
-    # 폴더 내 동일 파일명 검색
-    q = (
-        f"'{folder_id}' in parents and "
-        f"name = '{file_name}' and "
-        f"trashed = false"
-    )
-    res = service.files().list(q=q, fields="files(id, name)").execute()
-    files = res.get("files", [])
-
-    media = MediaFileUpload(str(local_path), resumable=True)
-
-    if files:
-        file_id = files[0]["id"]
-        service.files().update(fileId=file_id, media_body=media).execute()
-        return "updated", file_name
-    else:
-        metadata = {"name": file_name, "parents": [folder_id]}
-        service.files().create(body=metadata, media_body=media, fields="id").execute()
-        return "created", file_name
-
-
 def main():
     folder_id = os.environ.get("GDRIVE_FOLDER_ID")
     if not folder_id:
-        raise RuntimeError("GDRIVE_FOLDER_ID 환경변수가 없습니다. GitHub Secrets에 추가하세요.")
+        raise RuntimeError("GDRIVE_FOLDER_ID가 없습니다. GitHub Secrets에 추가하세요.")
+
+    # KST 기준 “어제” 리포트를 업로드 (report 생성 로직과 맞춤)
+    kst = timezone(timedelta(hours=9))
+    target_date = (datetime.now(kst) - timedelta(days=1)).strftime("%Y-%m-%d")
 
     reports_dir = Path("reports")
     if not reports_dir.exists():
-        raise RuntimeError("reports/ 폴더가 없습니다. 리포트 생성 단계가 먼저 실행되어야 합니다.")
+        print("⏭️ reports/ 폴더 없음 → 종료")
+        return
 
-    # 업로드 대상: reports 폴더의 md/json 전부 (필요하면 필터링 가능)
-    targets = list(reports_dir.glob("*.md")) + list(reports_dir.glob("*.json"))
+    targets = [
+        reports_dir / f"{target_date}_AI_Report.md",
+        reports_dir / f"{target_date}_summaries.json",
+    ]
+    targets = [p for p in targets if p.exists()]
+
     if not targets:
-        raise RuntimeError("업로드할 파일이 없습니다. reports/*.md, *.json을 확인하세요.")
+        print(f"⏭️ 업로드할 파일 없음 ({target_date}) → 종료")
+        return
 
     service = get_drive_service()
 
-    print(f"📤 Drive 업로드 시작: {len(targets)}개 파일")
+    print(f"📤 Drive 업로드 시작: {len(targets)}개 파일 ({target_date})")
     for p in targets:
         status, name = upload_if_not_exists(service, folder_id, p)
         print(f" - {status}: {name}")
 
     print("✅ Drive 미러링 완료")
-
 
 if __name__ == "__main__":
     main()

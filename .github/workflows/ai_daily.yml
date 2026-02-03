@@ -21,7 +21,7 @@ jobs:
       - name: Checkout repository (full history)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 중요: rebase/pull 하려면 전체 히스토리 필요
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,7 +42,7 @@ jobs:
       - name: Mirror to Google Drive
         env:
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
-          GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY_JSON }}
+          GDRIVE_OAUTH_TOKEN_JSON: ${{ secrets.GDRIVE_OAUTH_TOKEN_JSON }}
         run: |
           python scripts/upload_to_drive.py
 

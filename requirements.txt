@@ -1,5 +1,8 @@
-duckduckgo-search
-arxiv
-google-generativeai
-google-api-python-client
-google-auth
+duckduckgo-search>=5.3.0
+arxiv>=2.1.0
+google-generativeai>=0.8.3
+
+google-api-python-client>=2.120.0
+google-auth>=2.28.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
