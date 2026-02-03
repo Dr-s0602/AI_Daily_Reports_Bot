@@ -1,0 +1,37 @@
+[
+  {
+    "idx": 1,
+    "type": "paper",
+    "title": "Reward-free Alignment for Conflicting Objectives",
+    "link": "https://arxiv.org/pdf/2602.02495v1",
+    "summary_text": "- 제목: Reward-free Alignment for Conflicting Objectives\n- 분류: 논문\n- 핵심 키워드: LLM 정렬, 다중 목표, 보상 모델 프리\n- 핵심 포인트:\n  - (1) 기존 LLM 정렬 방식(가중치 손실, 명시적 보상 모델)은 다중 충돌 목표 시 불안정성, 낮은 트레이드오프, 복잡성 및 사용자 선호도 왜곡 문제를 야기함을 지적.\n  - (2) RACO(Reward-free Alignment for Conflicted Objectives) 프레임워크 제안: 쌍대 선호도 데이터를 직접 활용하고, 'clipped variant의 conflict-averse gradient descent'를 통해 기울기 충돌을 해결. 이를 통해 사용자 지정 가중치를 존중하는 파레토 임계점으로의 수렴 보장 및 수렴 속도 개선.\n  - (3) 다중 목표 요약 및 안전 정렬 태스크에서 Qwen 3, Llama 3, Gemma 3 등 다양한 LLM에 걸쳐 정성적/정량적 평가를 수행, 기존 다중 목표 정렬 기준선 대비 우수한 파레토 트레이드오프를 일관되게 달성함을 입증.\n- 기술 스택 태그: LLM / NLP | 머신러닝 최적화 | 파인튜닝\n- 개발자 관점 한 줄 평: 다중 충돌 목표를 가진 LLM 파인튜닝 시, 보상 모델 구축의 복잡성 없이 직접적인 사용자 선호도 데이터를 활용하여 안정적인 파레토 최적화를 달성할 수 있는 실용적인 방법론을 제시한다.\n- 참고 링크: https://arxiv.org/pdf/2602.02495v1"
+  },
+  {
+    "idx": 2,
+    "type": "paper",
+    "title": "MEG-XL: Data-Efficient Brain-to-Text via Long-Context Pre-Training",
+    "link": "https://arxiv.org/pdf/2602.02494v1",
+    "summary_text": "- 제목: MEG-XL: Long-Context 사전 학습을 통한 데이터 효율적인 뇌-텍스트 변환\n- 분류: 논문\n- 핵심 키워드: 뇌-텍스트, MEG, 장문맥락\n- 핵심 포인트:\n  - (1) 마비 환자와 같이 학습 데이터 확보가 어려운 상황을 위해, 2.5분(191k 토큰)의 긴 MEG 문맥으로 사전 학습하는 데이터 효율적인 뇌-텍스트 변환 모델인 MEG-XL을 제안한다.\n  - (2) MEG-XL은 기존 연구 대비 5-300배 긴 문맥을 활용하며, 훨씬 적은 데이터(예: 1시간 vs. 50시간)로도 지도 학습과 동등한 성능을 달성하고 기존 뇌 파운데이션 모델을 능가한다.\n  - (3) 긴 문맥 사전 학습이 단어 디코딩으로 더 잘 전이되는 표현을 학습하게 하여, 기존 방법들이 불필요하게 버리던 확장된 신경 문맥을 효과적으로 활용함을 입증했다.\n- 기술 스택 태그: AI/ML | 딥러닝 | 뇌-컴퓨터 인터페이스 (BCI)\n- 개발자 관점 한 줄 평: 데이터 희소성이 높은 분야에서 '문맥 길이'가 모델의 데이터 효율성과 성능에 미치는 중요성을 명확히 보여주며, 이는 제한된 데이터 환경에서의 AI 모델 개발 전략 수립에 중요한 시사점을 제공한다.\n- 참고 링크: https://arxiv.org/pdf/2602.02494v1"
+  },
+  {
+    "idx": 3,
+    "type": "paper",
+    "title": "PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss",
+    "link": "https://arxiv.org/pdf/2602.02493v1",
+    "summary_text": "- 제목: PixelGen: Pixel Diffusion Beats Latent Diffusion with Perceptual Loss\n- 분류: 논문\n- 핵심 키워드: Pixel Diffusion, Perceptual Loss, Latent Diffusion\n- 핵심 포인트:\n  - (1) 기존 픽셀 Diffusion 모델은 VAE 아티팩트와 병목 현상을 피할 수 있지만, 고차원 픽셀 매니폴드 최적화의 어려움으로 Latent Diffusion 모델에 비해 성능이 뒤처지는 한계를 가진다.\n  - (2) PixelGen은 VAE나 latent representation 없이 픽셀 공간에서 직접 이미지를 생성하며, LPIPS와 DINO 기반의 두 가지 상보적인 perceptual loss를 도입하여 더 의미 있는 인지적(perceptual) 매니폴드 학습을 유도한다.\n  - (3) PixelGen은 ImageNet-256에서 80 훈련 에폭만으로 FID 5.11을 달성하고, 대규모 text-to-image 생성에서 GenEval 0.79를 기록하며 기존 Latent Diffusion 모델들을 능가하는 성능과 더 단순한 생성 패러다임을 제공한다.\n- 기술 스택 태그: Diffusion Model | Generative AI | Image Generation\n- 개발자 관점 한 줄 평: VAE와 같은 보조 단계 없이 픽셀 공간에서 직접 고품질 이미지를 생성하면서도 복잡성을 줄이고 성능을 향상시킨 접근 방식은 generative AI 시스템 설계에 중요한 시사점을 제공한다.\n- 참고 링크: https://arxiv.org/pdf/2602.02493v1"
+  },
+  {
+    "idx": 4,
+    "type": "paper",
+    "title": "RLAnything: Forge Environment, Policy, and Reward Model in Completely Dynamic RL System",
+    "link": "https://arxiv.org/pdf/2602.02488v1",
+    "summary_text": "- 제목: RLAnything: Forge Environment, Policy, and Reward Model in Completely Dynamic RL System\n- 분류: 논문\n- 핵심 키워드: 강화학습, 동적, LLM\n- 핵심 포인트:\n  - (1) RLAnything는 LLM 및 에이전트 시나리오를 위한 강화 학습(RL) 프레임워크로, 폐쇄 루프 최적화를 통해 환경, 정책, 보상 모델을 동적으로 생성하고 강화한다.\n  - (2) 정책은 단계별 및 최종 결과 신호 통합 피드백으로 훈련되며, 보상 모델은 일관성 피드백으로 공동 최적화되고, 환경은 각 모델의 비평가 피드백을 활용하여 자동 적응된다.\n  - (3) OSWorld에서 Qwen3-VL-8B-Thinking 9.1%, AlfWorld와 LiveBench에서 Qwen2.5-7B-Instruct 각각 18.7%, 11.9%의 성능 향상을 보였으며, 최적화된 보상 모델 신호가 인간 라벨보다 우수함을 입증했다.\n- 기술 스택 태그: Reinforcement Learning | LLM | Agent\n- 개발자 관점 한 줄 평: 동적인 폐쇄 루프 최적화를 통해 LLM/에이전트의 강화 학습 시스템을 자동화하고 성능을 극대화하여, 복잡한 태스크에서 개발 효율성과 시스템 견고성을 크게 향상시킬 잠재력이 있다.\n- 참고 링크:\n  - https://arxiv.org/pdf/2602.02488v1\n  - Code: https://github.com/Gen-Verse/Open-AgentRL"
+  },
+  {
+    "idx": 5,
+    "type": "paper",
+    "title": "RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents",
+    "link": "https://arxiv.org/pdf/2602.02486v1",
+    "summary_text": "- 제목: RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents\n- 분류: 논문\n- 핵심 키워드: LLM 에이전트, 상태 관리, 탐색 효율\n- 핵심 포인트:\n  - (1) **ReAct 프레임워크의 한계점 극복:** 기존 LLM 기반 심층 탐색 에이전트(ReAct)의 선형적 디자인이 이전 상태 재방문, 대안 탐색, 장기 컨텍스트 내 전역적 인지 유지의 어려움을 야기하여 지역 최적화, 중복 탐색, 비효율적인 검색으로 이어지는 문제를 제기.\n  - (2) **Re-TRAC의 핵심 매커니즘:** 각 탐색 궤적(trajectory) 이후 증거, 불확실성, 실패, 미래 계획을 요약하는 '구조화된 상태 표현(structured state representation)'을 생성하고, 이를 다음 궤적의 조건으로 활용하여 교차 궤적(cross-trajectory) 탐색을 수행. 이를 통해 반복적인 성찰과 전역적으로 정보화된 계획 수립을 가능하게 함.\n  - (3) **성능 개선 및 효율성 증명:** 최신 LLM 환경에서 ReAct 대비 BrowseComp 벤치마크에서 15-20% 성능 향상을 보였으며, 소형 모델에서는 Re-TRAC 기반 미세 튜닝으로 SOTA(State-of-the-Art) 달성. 특히, 라운드를 거듭할수록 도구 호출 및 토큰 사용량의 단조로운 감소를 통해 점진적이고 효율적인 탐색이 이루어짐을 입증.\n- 기술 스택 태그: LLM | Agentic Framework | AI Planning\n- 개발자 관점 한 줄 평: 복잡한 LLM 에이전트의 장기적인 탐색 및 의사결정 과정에서 핵심인 '상태 관리'와 '반복적 성찰'을 구조화하여 효율성과 성능을 크게 개선한 실용적인 접근법이다.\n- 참고 링크: https://arxiv.org/pdf/2602.02486v1"
+  }
+]
