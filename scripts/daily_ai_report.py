@@ -322,6 +322,19 @@ def main():
     target_date = (datetime.now(kst) - timedelta(days=1)).strftime("%Y-%m-%d")
     generated_time_kst = datetime.now(kst).strftime("%H:%M")
 
+    # ✅ 1) reports 폴더/파일 경로를 먼저 확정
+    reports_dir = Path("reports")
+    reports_dir.mkdir(exist_ok=True)
+
+    report_path = reports_dir / f"{target_date}_AI_Report.md"
+    summary_path = reports_dir / f"{target_date}_summaries.json"
+
+    # ✅ 2) 중복 방지: 둘 다 있으면 즉시 종료 (토큰/쿼터 절약)
+    if report_path.exists() and summary_path.exists():
+        print(f"⏭️ 이미 생성됨: {report_path.name}, {summary_path.name} → 종료")
+        return
+
+    # ✅ 3) API KEY 확인/모델 준비
     api_key = os.environ.get("GOOGLE_API_KEY")
     if not api_key:
         raise RuntimeError("환경변수 GOOGLE_API_KEY가 필요합니다. GitHub Secrets로 넣으세요.")
@@ -331,16 +344,13 @@ def main():
 
     print(f"🚀 AI Daily Report 시작 | target_date={target_date} | model={model_name}")
 
+    # ✅ 4) 수집 → 요약 → 저장 (여기서부터 비용 발생)
     items = collect_items(target_date, news_n=5, paper_n=5)
     print(f"✅ 수집 완료: {len(items)}건")
 
     summaries = map_summaries(model_name, items)
 
-    reports_dir = Path("reports")
-    reports_dir.mkdir(exist_ok=True)
-
     # 요약 저장
-    summary_path = reports_dir / f"{target_date}_summaries.json"
     summary_path.write_text(json.dumps(summaries, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"💾 요약 저장: {summary_path}")
 
@@ -364,11 +374,11 @@ def main():
         print("✅ 포맷 검증 통과")
 
     # 리포트 저장
-    report_path = reports_dir / f"{target_date}_AI_Report.md"
     report_path.write_text(report_text, encoding="utf-8")
     print(f"💾 리포트 저장: {report_path}")
 
     print("🎉 종료")
+
 
 
 if __name__ == "__main__":

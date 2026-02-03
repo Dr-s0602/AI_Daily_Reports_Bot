@@ -18,6 +18,30 @@ def get_drive_service():
     creds = Credentials.from_service_account_info(sa_info, scopes=SCOPES)
     return build("drive", "v3", credentials=creds)
 
+def upload_if_not_exists(service, folder_id: str, local_path: Path):
+    """
+    같은 파일명이 Drive 폴더에 이미 있으면 업로드 스킵.
+    없을 때만 create.
+    """
+    file_name = local_path.name
+
+    # 폴더 내 동일 파일명 검색
+    q = (
+        f"'{folder_id}' in parents and "
+        f"name = '{file_name}' and "
+        f"trashed = false"
+    )
+    res = service.files().list(q=q, fields="files(id, name)").execute()
+    files = res.get("files", [])
+
+    if files:
+        return "skipped", file_name
+
+    media = MediaFileUpload(str(local_path), resumable=True)
+    metadata = {"name": file_name, "parents": [folder_id]}
+    service.files().create(body=metadata, media_body=media, fields="id").execute()
+    return "created", file_name
+
 
 def upload_or_update_file(service, folder_id: str, local_path: Path):
     """
@@ -64,7 +88,7 @@ def main():
 
     print(f"📤 Drive 업로드 시작: {len(targets)}개 파일")
     for p in targets:
-        status, name = upload_or_update_file(service, folder_id, p)
+        status, name = upload_if_not_exists(service, folder_id, p)
         print(f" - {status}: {name}")
 
     print("✅ Drive 미러링 완료")
