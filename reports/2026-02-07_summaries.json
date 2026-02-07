@@ -1,0 +1,37 @@
+[
+  {
+    "idx": 1,
+    "type": "paper",
+    "title": "Shared LoRA Subspaces for almost Strict Continual Learning",
+    "link": "https://arxiv.org/pdf/2602.06043v1",
+    "summary_text": "- 제목: 단일 공유 LoRA 서브스페이스를 통한 대규모 모델 지속 학습 효율화\n- 분류: 논문\n- 핵심 키워드: 지속 학습, LoRA, 공유 서브스페이스\n- 핵심 포인트:\n  - (1) 대규모 사전 학습 모델의 지속 학습은 치명적 망각(catastrophic forgetting)과 높은 재학습 비용 때문에 어려움을 겪으며, 기존 LoRA 방식은 여러 어댑터를 사용해 자원 효율성이 떨어진다.\n  - (2) 제안하는 'Share'는 단일의 동적으로 업데이트되는 공유 저랭크 서브스페이스(low-rank subspace)를 학습하여, 과거 태스크의 핵심 지식을 통합하고 새로운 정보를 점진적으로 추가함으로써 지식 전달을 촉진하고 간섭을 최소화한다.\n  - (3) 이 접근법은 기존 LoRA 방식 대비 최대 100배의 파라미터 감소와 281배의 메모리 절감 효과를 제공하며, 공동 학습 모델에 버금가는 성능을 유지하고 수백 개의 태스크별 LoRA 어댑터를 단일 모델로 대체 가능하다.\n- 기술 스택 태그: Deep Learning / LLM Tuning / MLOps\n- 개발자 관점 한 줄 평: 대규모 AI 모델의 지속적인 배포 및 유지보수 과정에서 치명적 망각 문제와 자원 비효율성을 해결하여 운영 복잡도와 비용을 획기적으로 줄이는 실용적인 접근법을 제시한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06043v1"
+  },
+  {
+    "idx": 2,
+    "type": "paper",
+    "title": "Pseudo-Invertible Neural Networks",
+    "link": "https://arxiv.org/pdf/2602.06042v1",
+    "summary_text": "- 제목: Pseudo-Invertible Neural Networks\n- 분류: 논문\n- 핵심 키워드: Pseudo-inverse, 비선형, 역문제\n- 핵심 포인트:\n  - (1) 선형 시스템의 Moore-Penrose Pseudo-inverse 개념을 비선형 신경망으로 확장하기 위한 Surjective Pseudo-invertible Neural Networks (SPNN) 아키텍처를 제안한다.\n  - (2) 비선형 매핑 $f(x)=y$에 대한 일관성 제약(consistency constraint)을 보장하는 Non-Linear Back-Projection (NLBP) 방법을 정립하며, 이는 선형 시스템의 null-space projection과 유사하다.\n  - (3) SPNN을 활용하여 기존 선형 역문제에 국한되었던 제로샷(zero-shot) 역문제 해결 범위를 비선형 정보 손실(degradation)로 확장하고, 생성 모델의 재훈련 없이 정교한 의미론적 제어를 가능하게 한다.\n- 기술 스택 태그: ML | Deep Learning | Generative AI\n- 개발자 관점 한 줄 평: 이 논문은 비선형 시스템에서의 역변환 문제를 해결하는 새로운 프레임워크를 제시하여, 복잡한 데이터 변환의 역추적이나 생성형 AI 모델의 제어를 더 효율적이고 정밀하게 만드는 핵심 기술 기반을 제공한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06042v1"
+  },
+  {
+    "idx": 3,
+    "type": "paper",
+    "title": "DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching",
+    "link": "https://arxiv.org/pdf/2602.06039v1",
+    "summary_text": "- 제목: DyTopo: 의미론적 매칭을 통한 다중 에이전트 추론을 위한 동적 토폴로지 라우팅\n- 분류: 논문\n- 핵심 키워드: 다중 에이전트, 동적 토폴로지, 의미론적 매칭\n- 핵심 포인트:\n  - (1) 기존 다중 LLM 에이전트 시스템의 고정된 통신 패턴 문제를 지적하며, DyTopo는 각 라운드마다 매니저의 목표에 맞춰 동적으로 희소한 지향성 통신 그래프를 재구성한다.\n  - (2) 각 에이전트는 자연어 기반의 '요청(need)' 및 '제공(offer)' 디스크립터를 출력하고, DyTopo는 이들을 임베딩한 후 의미론적 매칭을 통해 필요한 에이전트에게만 메시지를 비공개로 라우팅한다.\n  - (3) 코드 생성 및 수학적 추론 벤치마크에서 네 가지 LLM 백본을 사용하여 실험한 결과, 기존 최고 성능 대비 평균 6.2% 향상된 성능을 보였으며, 진화하는 그래프를 통해 에이전트 간의 협업 과정을 시각적으로 추적할 수 있다.\n- 기술 스택 태그: LLM | Multi-Agent | ML/AI\n- 개발자 관점 한 줄 평: 복잡한 문제 해결을 위한 다중 LLM 에이전트 시스템에서 통신의 효율성과 유연성을 높여주는 동적 라우팅 방식을 제안하여, 실제 서비스 구축 시 활용 가치가 높아 보인다.\n- 참고 링크: https://arxiv.org/pdf/2602.06039v1"
+  },
+  {
+    "idx": 4,
+    "type": "paper",
+    "title": "CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction",
+    "link": "https://arxiv.org/pdf/2602.06038v1",
+    "summary_text": "- 제목: CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction\n- 분류: 논문\n- 핵심 키워드: LLM, 다중 에이전트, Conformal Prediction\n- 핵심 포인트:\n  - (1) 다중 이기종 로봇들이 협력하여 자연어 명령을 수행하고 정보 수집하는 과정을 다중 에이전트 다중 작업 로봇 질문 응답(MM-EQA) 문제로 정의하며, 효율적인 커뮤니케이션의 중요성을 강조한다.\n  - (2) 이 문제를 해결하기 위해 LLM 기반의 분산 통신 프레임워크인 CommCP를 제안한다. CommCP는 Conformal Prediction을 활용하여 생성된 메시지를 보정함으로써 수신자의 혼란을 최소화하고 통신 신뢰성을 높인다.\n  - (3) 다양한 포토리얼리스틱 가정 환경 시나리오를 포함하는 새로운 MM-EQA 벤치마크를 도입했으며, 실험 결과 CommCP가 기존 기준선 대비 작업 성공률과 탐색 효율성을 유의미하게 향상시켰음을 입증한다.\n- 기술 스택 태그: LLM | Multi-Agent System | Robotics | AI/ML\n- 개발자 관점 한 줄 평: LLM의 강력한 언어 이해 능력을 다중 로봇 협업 통신에 적용하고, Conformal Prediction으로 그 신뢰성을 보장하여 복잡한 로봇 시스템 개발에 실질적인 해결책을 제시한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06038v1"
+  },
+  {
+    "idx": 5,
+    "type": "paper",
+    "title": "Can vision language models learn intuitive physics from interaction?",
+    "link": "https://arxiv.org/pdf/2602.06033v1",
+    "summary_text": "- 제목: 비전 언어 모델은 상호작용을 통해 직관적인 물리 법칙을 배울 수 있는가?\n- 분류: 논문\n- 핵심 키워드: 직관물리학, 상호작용, 일반화\n- 핵심 포인트:\n  - (1) 사전 훈련된 비전 언어 모델(VLM)은 물리 세계에 대한 직관이 부족하며, 지도 미세 조정(SFT) 방식은 단순한 물리 태스크에서는 성능을 개선하나, 새로운 맥락에 일반화될 수 있는 견고한 물리 규칙을 학습하지 못한다.\n  - (2) 인지 과학 연구를 기반으로, 모델이 물리 역학을 제대로 학습하려면 환경과의 상호작용이 필요하다는 가설을 세우고, 강화 학습(RL)을 사용하여 상호작용을 통한 모델 훈련을 시도했다.\n  - (3) 상호작용을 통한 학습은 태스크 내 성능을 향상시켰지만, 일반화 가능한 물리적 직관을 가진 모델을 생성하는 데는 실패했다. 모델은 시각적 통계와 물리적 원리를 공유하는 관련 태스크에도 안정적으로 일반화되지 않았다.\n- 기술 스택 태그: ML/DL | VLM | 강화 학습\n- 개발자 관점 한 줄 평: 상호작용 기반 학습이 VLM의 물리적 직관을 개선할 것이라는 기대와 달리, 현재 접근 방식으로는 근본적인 일반화 문제가 해결되지 않음을 보여주어 실제 로봇 공학 등 물리 환경 적용 시 더 심층적인 모델링이 필요함을 시사한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06033v1"
+  }
+]
