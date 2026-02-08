@@ -1,0 +1,37 @@
+[
+  {
+    "idx": 1,
+    "type": "paper",
+    "title": "Shared LoRA Subspaces for almost Strict Continual Learning",
+    "link": "https://arxiv.org/pdf/2602.06043v1",
+    "summary_text": "- 제목: Shared LoRA Subspaces for almost Strict Continual Learning\n- 분류: 논문\n- 핵심 키워드: 지속 학습, 매개변수 효율 튜닝, 저랭크 적응\n- 핵심 포인트:\n  - (1) 대규모 사전 학습 모델을 새로운 작업에 지속적으로 적응시킬 때 발생하는 치명적 망각(catastrophic forgetting) 및 높은 재학습 비용 문제를 해결하는 것을 목표로 한다.\n  - (2) Share는 단일하고 공유된 저랭크 부분 공간(single, shared low-rank subspace)을 동적으로 업데이트하여 과거 작업의 핵심 지식을 통합하고 새로운 정보를 점진적으로 학습하는 매개변수 효율적(parameter-efficient) 지속 미세 튜닝 방법론이다.\n  - (3) 기존 LoRA 방식 대비 최대 100배의 매개변수 및 281배의 메모리 절감 효과를 제공하며, 수백 개의 작업별 LoRA 어댑터를 단일 모델로 대체하여 확장 가능하고 비동기적인 지속 학습을 지원한다.\n- 기술 스택 태그: Deep Learning | MLOps | Parameter-Efficient Tuning\n- 개발자 관점 한 줄 평: 대규모 AI 시스템에서 모델 배포 및 관리를 위한 자원 효율성을 극대화하고, 다양한 작업에 대한 지속 학습 환경 구축을 단순화할 수 있는 실용적인 방법론이다.\n- 참고 링크: https://arxiv.org/pdf/2602.06043v1"
+  },
+  {
+    "idx": 2,
+    "type": "paper",
+    "title": "Pseudo-Invertible Neural Networks",
+    "link": "https://arxiv.org/pdf/2602.06042v1",
+    "summary_text": "- 제목: 유사-가역 신경망 (Pseudo-Invertible Neural Networks)\n- 분류: 논문\n- 핵심 키워드: 유사역행렬, 신경망, 제로샷\n- 핵심 포인트:\n  - (1) 무어-펜로즈 유사역행렬(PInv) 개념을 비선형 시스템, 특히 신경망에 적용하기 위해 'Surjective Pseudo-invertible Neural Networks (SPNN)' 아키텍처를 제안하여, 비선형 PInv의 계산 가능성을 확보했다.\n  - (2) 정의된 비선형 PInv를 활용하여 'Non-Linear Back-Projection (NLBP)' 기법을 공식화했으며, 이는 비선형 매핑 $f(x)=y$에 대해 샘플 $x$를 가장 가까운 일관된 상태 $x'$로 이동시켜 일관성 제약 조건을 만족시킨다.\n  - (3) 선형 역문제에 국한되었던 확산 기반 널스페이스 프로젝션을 활용한 제로샷(zero-shot) 역문제 해결 범위를 광학 왜곡이나 분류와 같은 비선형 정보 손실(degradation)까지 확장하며, 확산 모델의 재학습 없이 생성 출력에 대한 정밀한 의미론적 제어를 가능하게 한다.\n- 기술 스택 태그: ML/DeepLearning | Neural Networks\n- 개발자 관점 한 줄 평: 기존 확산 모델의 재학습 없이 비선형 역문제를 해결하고 생성 AI의 출력을 정밀하게 제어할 수 있는 새로운 기법으로, 복잡한 현실 세계 데이터 처리 및 생성 모델 활용에 큰 이점을 제공할 것으로 기대된다.\n- 참고 링크: https://arxiv.org/pdf/2602.06042v1"
+  },
+  {
+    "idx": 3,
+    "type": "paper",
+    "title": "DyTopo: Dynamic Topology Routing for Multi-Agent Reasoning via Semantic Matching",
+    "link": "https://arxiv.org/pdf/2602.06039v1",
+    "summary_text": "- 제목: DyTopo: 시맨틱 매칭을 통한 다중 에이전트 추론을 위한 동적 토폴로지 라우팅\n- 분류: 논문\n- 핵심 키워드: 다중 에이전트, 동적 라우팅, 시맨틱 매칭\n- 핵심 포인트:\n  - (1) 기존 LLM 기반 다중 에이전트 시스템은 고정된 통신 패턴에 의존하여 다중 라운드 추론 시 비효율적이며, 단계별 요구사항에 부적합하다는 한계를 가진다.\n  - (2) DyTopo는 매니저가 라운드 목표에 따라 에이전트의 자연어 쿼리(needs) 및 키(offers) 기술자를 임베딩하고, 시맨틱 매칭을 통해 매 라운드마다 희소한 지향성 통신 그래프를 동적으로 재구성하여 메시지를 라우팅한다.\n  - (3) DyTopo는 코드 생성 및 수학적 추론 벤치마크에서 여러 LLM 백본에 걸쳐 강력한 기준선 대비 평균 6.2%의 일관된 성능 향상을 보였으며, 변화하는 그래프를 통해 해석 가능한 조율 추적을 제공한다.\n- 기술 스택 태그: MLOps | LLM | AI/ML\n- 개발자 관점 한 줄 평: 현재 LLM 기반 다중 에이전트 시스템의 고정된 통신 구조 한계를 동적 라우팅으로 해결하여 효율성과 해석 가능성을 동시에 높인 실용적인 접근 방식을 제시한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06039v1"
+  },
+  {
+    "idx": 4,
+    "type": "paper",
+    "title": "CommCP: Efficient Multi-Agent Coordination via LLM-Based Communication with Conformal Prediction",
+    "link": "https://arxiv.org/pdf/2602.06038v1",
+    "summary_text": "- 제목: CommCP: 효율적인 LLM 기반 Conformal Prediction 통신을 통한 다중 에이전트 조정\n- 분류: 논문\n- 핵심 키워드: Multi-Agent, LLM, Conformal Prediction\n- 핵심 포인트:\n  - (1) 복수의 이종 로봇 에이전트가 인간의 자연어 명령을 수행하기 위해 효율적인 정보 수집 및 중복 없는 협업을 필요로 하는 MM-EQA(Multi-Agent Multi-Task Embodied Question Answering) 문제를 다룹니다.\n  - (2) 제안된 CommCP 프레임워크는 LLM(Large Language Model) 기반의 분산 통신 방식을 사용하여 에이전트 간의 조정을 최적화하고 태스크 성공률 및 탐색 효율성을 크게 향상시킵니다.\n  - (3) Conformal Prediction 기법을 활용하여 LLM이 생성하는 메시지의 신뢰도를 측정하고 보정함으로써, 수신 에이전트의 불필요한 주의를 최소화하고 통신 신뢰성을 증대시킵니다.\n- 기술 스택 태그: AI/ML | Robotics | Multi-Agent Systems | NLP\n- 개발자 관점 한 줄 평: LLM과 Conformal Prediction을 결합하여 로봇 다중 에이전트 시스템의 협업 통신 신뢰성과 효율성을 실질적으로 개선한 연구로, 실제 로봇 배포 시 정보 교환의 안정성을 높이는 데 기여합니다.\n- 참고 링크: https://arxiv.org/pdf/2602.06038v1"
+  },
+  {
+    "idx": 5,
+    "type": "paper",
+    "title": "Can vision language models learn intuitive physics from interaction?",
+    "link": "https://arxiv.org/pdf/2602.06033v1",
+    "summary_text": "- 제목: Can vision language models learn intuitive physics from interaction?\n- 분류: 논문\n- 핵심 키워드: VLM, 직관물리, 일반화\n- 핵심 포인트:\n  - (1) 사전 학습된 Vision Language Model(VLM)은 물리 세계에 대한 직관이 부족하며, 지도 학습 기반의 미세 조정은 단순 작업 성능을 개선하지만 새로운 맥락으로 일반화하는 데 실패한다.\n  - (2) 연구팀은 인지 과학 연구에 기반하여, 모델이 물리 역학을 제대로 학습하기 위해서는 환경과의 상호작용(강화 학습을 통한 학습)이 필요하다는 가설을 세웠다.\n  - (3) 상호작용을 통한 학습(강화 학습)은 특정 작업 내 성능을 향상시키지만, 시각적 특성과 물리적 원리를 공유하는 관련 작업으로도 직관 물리를 일반화하는 데는 성공하지 못했다.\n- 기술 스택 태그: ML/AI | VLM | Reinforcement Learning\n- 개발자 관점 한 줄 평: VLM이 직관 물리를 학습하고 이를 새로운 환경에 일반화하는 것은 상호작용 기반 강화 학습을 통해서도 여전히 어려운 도전 과제임을 보여준다.\n- 참고 링크: https://arxiv.org/pdf/2602.06033v1"
+  }
+]
