@@ -1,0 +1,37 @@
+[
+  {
+    "idx": 1,
+    "type": "paper",
+    "title": "Learning a Generative Meta-Model of LLM Activations",
+    "link": "https://arxiv.org/pdf/2602.06964v1",
+    "summary_text": "- 제목: Learning a Generative Meta-Model of LLM Activations\n- 분류: 논문\n- 핵심 키워드: LLM 활성화, 생성형 메타모델, 해석 가능성\n- 핵심 포인트:\n  - (1) 기존 신경망 활성화 분석 방법(PCA, 희소 오토인코더)의 강한 구조적 가정 한계를 극복하기 위해, 생성형 모델(확산 모델) 기반의 \"메타모델\"을 제안한다.\n  - (2) 10억 개의 잔차 스트림(residual stream) 활성화 데이터로 훈련된 메타모델은 확산 손실(diffusion loss)이 컴퓨팅 자원에 비례하여 부드럽게 감소하며, LLM 조작 개입(steering interventions)의 유용성을 예측하고 유창성을 향상시킨다.\n  - (3) 메타모델의 뉴런들이 개별 개념을 효과적으로 분리하고 격리하는 경향을 보이며, 손실 감소에 따라 희소 프로빙(sparse probing) 점수가 향상되어 LLM 내부 상태의 해석 가능성을 높인다.\n- 기술 스택 태그: AI/ML | Generative AI | ML Explainability\n- 개발자 관점 한 줄 평: LLM의 블랙박스 내부 동작을 효과적으로 분석하고 제어하기 위한 새로운 생성형 모델 기반 접근법으로, AI 시스템의 신뢰성과 조작성을 높이는 데 기여할 잠재력이 크다.\n- 참고 링크: https://arxiv.org/pdf/2602.06964v1"
+  },
+  {
+    "idx": 2,
+    "type": "paper",
+    "title": "InftyThink+: Effective and Efficient Infinite-Horizon Reasoning via Reinforcement Learning",
+    "link": "https://arxiv.org/pdf/2602.06960v1",
+    "summary_text": "- 제목: InftyThink+: 강화 학습을 통한 효과적이고 효율적인 무한-지평선 추론\n- 분류: 논문\n- 핵심 키워드: 반복 추론, 강화학습, 컨텍스트 관리\n- 핵심 포인트:\n  - (1) 대규모 추론 모델(LLM)의 긴 추론 체인이 유발하는 2차 비용, 컨텍스트 길이 제한, 'lost-in-the-middle' 현상으로 인한 추론 품질 저하 문제를 해결하고자 함.\n  - (2) InftyThink+는 모델이 반복 경계와 명시적 요약을 제어하여 전체 반복 추론 궤적을 최적화하는 종단 간(end-to-end) 강화 학습(RL) 프레임워크를 제안한다.\n  - (3) Supervised cold-start와 궤적 레벨(trajectory-level) 강화 학습의 2단계 훈련 방식을 통해, AIME24 벤치마크에서 21% 정확도 향상과 함께 추론 지연 감소 및 RL 훈련 가속화 효과를 보여준다.\n- 기술 스택 태그: ML/LLM | Reinforcement Learning | Context Management\n- 개발자 관점 한 줄 평: LLM 기반 시스템에서 긴 추론 체인의 비효율성과 높은 비용을 해결하기 위해 강화 학습으로 컨텍스트 관리를 최적화하여, 실제 서비스에 LLM을 효과적으로 적용할 수 있는 길을 제시하는 중요한 연구이다.\n- 참고 링크: https://arxiv.org/pdf/2602.06960v1"
+  },
+  {
+    "idx": 3,
+    "type": "paper",
+    "title": "Improving Credit Card Fraud Detection with an Optimized Explainable Boosting Machine",
+    "link": "https://arxiv.org/pdf/2602.06955v1",
+    "summary_text": "- 제목: Improving Credit Card Fraud Detection with an Optimized Explainable Boosting Machine\n- 분류: 논문\n- 핵심 키워드: 신용카드 사기 탐지, 설명 가능 AI, 클래스 불균형\n- 핵심 포인트:\n  - (1) 신용카드 사기 탐지에서 예측 신뢰성을 저해하는 고질적인 '클래스 불균형' 문제와 더불어, 실제 금융 시스템에서 요구되는 '설명 가능성'을 갖춘 솔루션의 필요성을 제기한다.\n  - (2) 정보 손실이나 편향을 유발하는 기존 샘플링 기법 대신, GA2M 기반의 설명 가능한 부스팅 머신(EBM)을 하이퍼파라미터 튜닝, 특성 선택, 전처리 개선 및 타구치(Taguchi) 방법을 활용하여 체계적으로 최적화하는 워크플로우를 제안한다.\n  - (3) 벤치마크 신용카드 데이터셋에서 ROC-AUC 0.983을 달성하여 기존 EBM(0.975) 및 Logistic Regression, Random Forest, XGBoost 등 다른 모델들을 능가하는 성능을 보였으며, 이는 금융 사기 분석에서 설명 가능한 머신러닝과 데이터 기반 최적화의 잠재력을 입증한다.\n- 기술 스택 태그: ML/Python | MLOps\n- 개발자 관점 한 줄 평: 복잡한 금융 사기 탐지 문제에서 모델의 설명 가능성을 유지하며 성능을 극대화하는 체계적인 최적화 방법론을 제시하여, 실제 시스템 도입 시 신뢰도를 높일 수 있는 실용적인 가이드를 제공한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06955v1"
+  },
+  {
+    "idx": 4,
+    "type": "paper",
+    "title": "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos",
+    "link": "https://arxiv.org/pdf/2602.06949v1",
+    "summary_text": "- 제목: DreamDojo: 대규모 인간 비디오 기반 범용 로봇 월드 모델\n- 분류: 논문\n- 핵심 키워드: 월드모델, 로보틱스, 인간비디오\n- 핵심 포인트:\n  - (1) DreamDojo는 44k 시간 분량의 egocentric(1인칭 시점) 인간 비디오를 활용하여 다양한 상호작용과 능숙한 제어를 학습하는 파운데이션 월드 모델이며, 이는 월드 모델 사전 학습을 위한 최대 규모의 비디오 데이터셋입니다.\n  - (2) 액션 레이블 부족 문제를 해결하기 위해 '연속 잠재 액션(continuous latent actions)'을 통합 프록시 액션으로 도입하여 레이블이 없는 비디오에서도 상호작용 지식 전달을 강화합니다.\n  - (3) 소규모 로봇 데이터로 후처리 학습 후 물리적 이해와 정밀한 액션 제어 능력을 보이며, 증류(distillation) 파이프라인을 통해 실시간 속도(10.81 FPS) 및 컨텍스트 일관성을 개선하여 라이브 텔레오퍼레이션, 정책 평가, 모델 기반 계획 등의 응용을 가능하게 합니다.\n- 기술 스택 태그: 머신러닝 | 로보틱스 | 컴퓨터비전 | MLOps\n- 개발자 관점 한 줄 평: 대규모 인간 행동 비디오를 활용한 범용 로봇 월드 모델 구축은 로봇 학습의 데이터 희소성 문제를 해결하고 실제 환경 적용 가능성을 크게 확장할 잠재력이 큽니다.\n- 참고 링크: https://arxiv.org/pdf/2602.06949v1"
+  },
+  {
+    "idx": 5,
+    "type": "paper",
+    "title": "Agentic Uncertainty Reveals Agentic Overconfidence",
+    "link": "https://arxiv.org/pdf/2602.06948v1",
+    "summary_text": "- 제목: Agentic Uncertainty Reveals Agentic Overconfidence\n- 분류: 논문\n- 핵심 키워드: AI 에이전트, 과신, 불확실성\n- 핵심 포인트:\n  - (1) AI 에이전트가 작업 성공 여부를 예측하는 능력인 '에이전트 불확실성(agentic uncertainty)'을 연구했으며, 작업 실행 전, 도중, 후에 성공 확률 추정치를 추출했다.\n  - (2) 모든 결과에서 '에이전트 과신(agentic overconfidence)' 현상이 관찰되었으며, 일부 에이전트는 실제 성공률이 22%임에도 77%의 성공률을 예측했다.\n  - (3) 정보가 적은 '실행 전(pre-execution) 평가'가 표준 '실행 후(post-execution) 검토'보다 더 나은 판별력을 보이는 경우가 있었으며, '버그 찾기'로 평가를 재구성하는 적대적 프롬프트를 사용했을 때 가장 좋은 캘리브레이션(calibration)을 달성했다.\n- 기술 스택 태그: AI/ML | Prompt Engineering | Agent Systems\n- 개발자 관점 한 줄 평: AI 에이전트의 내재된 과신은 신뢰성 있는 AI 시스템 구축의 핵심적인 과제임을 보여주며, 단순히 성능 지표를 넘어선 강력한 자체 평가 메커니즘의 필요성을 강조한다.\n- 참고 링크: https://arxiv.org/pdf/2602.06948v1"
+  }
+]
