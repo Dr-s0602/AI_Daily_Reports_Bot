@@ -1,0 +1,37 @@
+[
+  {
+    "idx": 1,
+    "type": "news",
+    "title": "Artificial intelligence in the exam room",
+    "link": "https://www.msn.com/en-us/health/other/artificial-intelligence-in-the-exam-room/ar-AA28Edjl",
+    "summary_text": "- 제목: 시험실의 인공지능\n- 분류: 뉴스\n- 핵심 키워드: AI, 헬스케어, 지원\n- 핵심 포인트:\n  - AI는 거의 모든 사람의 일상생활의 일부가 되고 있다.\n  - AI는 헬스케어 분야에서 점점 더 큰 부분을 차지하고 있다.\n  - 헬스케어 제공자들이 AI 도구를 채택할 때, 이 기술은 제공자들을 지원하기 위한 것임을 기억하는 것이 중요하다.\n- 기술 스택 태그: AI\n- 개발자 관점 한 줄 평: AI는 의료 전문가를 지원하는 도구라는 본질을 명확히 인지하고 개발 및 도입해야 한다.\n- 참고 링크: https://www.msn.com/en-us/health/other/artificial-intelligence-in-the-exam-room/ar-AA28Edjl"
+  },
+  {
+    "idx": 2,
+    "type": "news",
+    "title": "Newsom's populist act: Oppose state billionaire tax, embrace federal one",
+    "link": "https://www.msn.com/en-us/news/other/newsom-s-populist-act-oppose-state-billionaire-tax-embrace-federal-one/ar-AA28GrVd",
+    "summary_text": "- 제목: Newsom's populist act: Oppose state billionaire tax, embrace federal one\n- 분류: 뉴스\n- 핵심 키워드: AI, 불평등, 정치\n- 핵심 포인트:\n  - Newsom은 AI로 인해 발생하는 불평등 문제에 초점을 맞추고 있다.\n  - AI로 인한 불평등은 대중적인 이슈로 부상하고 있다.\n  - Newsom은 이 이슈를 2028년 대선 출마를 위한 주요 의제로 활용할 것으로 예상된다.\n- 기술 스택 태그: AI\n- 개발자 관점 한 줄 평: AI 기술의 사회적 영향(불평등)이 정치적 의제로 부상하고 있음을 보여주며, 기술 개발 시 사회적 책임과 윤리적 고려가 더욱 중요해질 것임을 시사한다.\n- 참고 링크: https://www.msn.com/en-us/news/other/newsom-s-populist-act-oppose-state-billionaire-tax-embrace-federal-one/ar-AA28GrVd"
+  },
+  {
+    "idx": 3,
+    "type": "news",
+    "title": "Advanced Micro Devices, Inc. (AMD) Presents at AMD Advancing AI 2026 Transcript",
+    "link": "https://seekingalpha.com/article/4925191-advanced-micro-devices-inc-amd-presents-at-amd-advancing-ai-2026-transcript",
+    "summary_text": "- 제목: Advanced Micro Devices, Inc. (AMD) Presents at AMD Advancing AI 2026 Transcript\n- 분류: 뉴스\n- 핵심 키워드: AMD, AI, 2026\n- 핵심 포인트:\n  - AMD가 'AMD Advancing AI 2"
+  },
+  {
+    "idx": 4,
+    "type": "news",
+    "title": "Artificial advantage",
+    "link": "https://www.winnipegfreepress.com/business/2026/07/25/artificial-advantage",
+    "summary_text": "- 제목: Artificial advantage\n- 분류: 뉴스\n- 핵심 키워드: 생성형 AI, 정확도, 스탠포드 연구\n- 핵심 포인트:\n  - 생성형 AI 모델은 사실 여부와 관계없이 설득력 있게 들리는 답변을 제공하려 한다.\n  - 이러한 생성형 AI의 답변은 실제 사실과 거리가 멀 수 있다.\n  - 스탠포드 대학의 최근 연구에 따르면, 최고 수준의 생성형 AI 모델조차 정확도가 20%에서 94% 사이로 나타났다.\n- 기술 스택 태그: 생성형 AI, AI 모델, 머신러닝\n- 개발자 관점 한 줄 평: 생성형 AI의 답변은 그럴듯해 보여도 사실과 다를 수 있으므로, 실제 시스템 적용 시 엄격한 검증과 팩트 체크 로직 구현이 필수적이다.\n- 참고 링크: https://www.winnipegfreepress.com/business/2026/07/25/artificial-advantage"
+  },
+  {
+    "idx": 5,
+    "type": "news",
+    "title": "Analysis: A powerful new coalition of AI skeptics is coalescing right in Trump's blind spot",
+    "link": "https://www.msn.com/en-us/news/politics/analysis-a-powerful-new-coalition-of-ai-skeptics-is-coalescing-right-in-trumps-blind-spot/ar-AA28Fhr0",
+    "summary_text": "- 제목: Analysis: A powerful new coalition of AI skeptics is coalescing right in Trump's blind spot\n- 분류: 뉴스\n- 핵심 키워드: AI 회의론, 기술 변화, 연합\n- 핵심 포인트:\n  - 복음주의자, 노동조합,"
+  }
+]
