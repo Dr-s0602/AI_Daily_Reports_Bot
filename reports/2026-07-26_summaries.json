@@ -1,0 +1,72 @@
+[
+  {
+    "idx": 1,
+    "type": "news",
+    "title": "Marvell Technology: Steady Revenue Climbing",
+    "link": "https://www.fool.com/coverage/charts/2026/07/26/marvell-technology-vs-uipath-what-do-the-quarterly-revenue-trends-of-these-artificial-intelligence-companies-tell-investors/",
+    "summary_text": "- 제목: Marvell Technology: Steady Revenue Climbing\n- 분류: 뉴스\n- 핵심 키워드: Marvell, UiPath, 매출\n- 핵심 포인트:\n  - Marvell은 현재 압도적인 매출 선두를 유지하고 있다.\n  - UiPath는 최근 분기에 가속화되는 성장세를 보였다.\n  - UiPath의 성장은 Marvell과의 매출 격차를 좁히고 있다.\n- 기술 스택 태그: AI\n- 개발자 관점 한 줄 평: AI 시장에서 기존 강자와 신흥 주자 간의 매출 경쟁 구도 변화가 주목된다.\n- 참고 링크: https://www.fool.com/coverage/charts/2026/07/26/marvell-technology-vs-uipath-what-do-the-quarterly-revenue-trends-of-these-artificial-intelligence-companies-tell-investors/"
+  },
+  {
+    "idx": 2,
+    "type": "news",
+    "title": "The public demanded data center news, and Wisconsin Watch is delivering",
+    "link": "https://milwaukeenns.org/2026/07/26/wisconsin-watch-data-center-public-demanded-news-hot-topic-debate-stories/",
+    "summary_text": "- 제목: The public demanded data center news, and Wisconsin Watch is delivering\n- 분류: 뉴스\n- 핵심 키워드: 데이터센터, 위스콘신, 언론보도\n- 핵심 포인트:\n  - 위스콘신 워치는 지난 6개월간 데이터센터 관련 다수의"
+  },
+  {
+    "idx": 3,
+    "type": "news",
+    "title": "Kimi K3, the Chinese AI that has put Silicon Valley on alert",
+    "link": "https://english.elpais.com/technology/2026-07-26/kimi-k3-the-chinese-ai-that-has-put-silicon-valley-on-alert.html",
+    "summary_text": "- 제목: Kimi K3, the Chinese AI that has put Silicon Valley on alert\n- 분류: 뉴스\n- 핵심 키워드: Kimi K3, 오픈소스, 중국 AI\n- 핵심 포인트:\n  - Kimi K3는 실리콘밸리를 긴장시킨 새로운 중국 AI 모델이다.\n  - 이 모델은 세계에서 가장 큰 오픈소스 모델로 알려져 있다.\n  - Kimi K3의 등장은 중국이 AI 기술 발전 경쟁에서 다시 선두를 다투게 했음을 의미한다.\n- 기술 스택 태그: AI, LLM, 오픈소스\n- 개발자 관점 한 줄 평: 중국발 대규모 오픈소스 AI 모델의 등장이 기술 선도 경쟁 구도에 변화를 가져올 수 있음을 시사한다.\n- 참고 링크: https://english.elpais.com/technology/2026-07-26/kimi-k3-the-chinese-ai-that-has-put-silicon-valley-on-alert.html"
+  },
+  {
+    "idx": 4,
+    "type": "news",
+    "title": "China 'closing the gap' in AI race, says tech chief",
+    "link": "https://www.telegraph.co.uk/business/2026/07/26/china-closing-the-gap-in-ai-race-says-tech-chief/",
+    "summary_text": "- 제목: China 'closing the gap' in AI race, says tech chief\n- 분류: 뉴스\n- 핵심 키워드: 중국, AI, 비용효율성\n- 핵심 포인트:\n  - 중국의 Kimi 봇은 서구 AI 기업들을 위협할 수 있다는 우려를 낳고 있다.\n  - Kimi 봇은 100만 토큰 실행에 약 15달러로, Anthropic의 가장 강력한 기술(50달러) 대비 높은 비용 효율성을 제공한다.\n  - Kimi의 기반 기술 대부분은 오픈소스이며, 자유로운 다운로드 및 수정이 가능하다.\n- 기술 스택 태그: AI, 오픈소스\n- 개발자 관점 한 줄 평: 중국 AI의 비용 효율성과 오픈소스 전략은 서구 AI 시장에 경쟁 압력을 가하며, 개발자들에게 새로운 기술 선택지와 시장 변화를 예고한다.\n- 참고 링크: https://www.telegraph.co.uk/business/2026/07/26/china-closing-the-gap-in-ai-race-says-tech-chief/"
+  },
+  {
+    "idx": 5,
+    "type": "news",
+    "title": "Hundreds of Irish writers set to share millions of euro after €1.31bn Anthropic settlement",
+    "link": "https://www.irishtimes.com/crime-law/courts/2026/07/26/hundreds-of-irish-writers-set-to-share-millions-of-euro-after-131bn-anthropic-settlement/",
+    "summary_text": "- 제목: Anthropic의 13.1억 유로 합의 후 수백 명의 아일랜드 작가 수백만 유로 공유 예정\n- 분류: 뉴스\n- 핵심 키워드: Anthropic, 저작권, 합의금\n- 핵심 포인트:\n  - AI 기업 Anthropic이 저작권 침해 소송에 대한 합의금으로 13.1억 유로를 지급했다.\n  - 이 합의금은 수백 명의 아일랜드 작가들에게 분배될 예정이다.\n  - 작가들은 각각 수백만 유로를 공유하게 된다.\n- 기술 스택 태그: AI\n- 개발자 관점 한 줄 평: AI 모델 학습 데이터의 저작권 침해 관련 법적 리스크가 현실화되고 있으며, 이는 AI 개발 과정에서 데이터 소싱 및 윤리적 고려의 중요성을 강조한다.\n- 참고 링크: https://www.irishtimes.com/crime-law/courts/2026/07/26/hundreds-of-irish-writers-set-to-share-millions-"
+  },
+  {
+    "idx": 6,
+    "type": "paper",
+    "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+    "link": "https://arxiv.org/pdf/2607.21595v1",
+    "summary_text": "- 제목: 3D-Aware VLMs with Implicit and Explicit Geometries\n- 분류: 논문\n- 핵심 키워드: 3D VLM, Implicit Geometry, Explicit Geometry\n- 핵심 포인트:\n  - 기존 2D VLM의 3D 공간 이해 및 추론 한계를 극복하기 위해, RGB 비디오에서 학습된 암시적(Implicit) 및 명시적(Explicit"
+  },
+  {
+    "idx": 7,
+    "type": "paper",
+    "title": "Expanding Flow Maps",
+    "link": "https://arxiv.org/pdf/2607.21585v1",
+    "summary_text": "- 제목: Expanding Flow Maps\n- 분류: 논문\n- 핵심 키워드: 생성 모델, 가변 차원, 확장 흐름\n- 핵심 포인트:\n  - 기존 플로우 기반 생성 모델이 고정된 차원이나 시퀀스 길이에 제약이 있다는 한계를 지적한다.\n  - Expanding Generative Flows (EFlows)와 Expanding Flow Maps (EFMs)를 제안하여, 조건부 노이즈를 통해 상태를 확장하며 차원이 증가하는 분포 간의 흐름"
+  },
+  {
+    "idx": 8,
+    "type": "paper",
+    "title": "GraphVid: Interactive Graph-Controllable Video Generation",
+    "link": "https://arxiv.org/pdf/2607.21580v1",
+    "summary_text": "- 제목: GraphVid: Interactive Graph-Controllable Video Generation\n- 분류: 논문\n- 핵심 키워드: GraphVid, 비디오 생성, 상호작용 그래프\n- 핵심 포인트:\n  - 기존 텍스트 프롬프트나 모션 제어 입력 방식이 다중 객체 상호작용을 정밀하게 지정하기 어렵다는 문제점을 해결하기 위해, 구조화된 상호작용 그래프를 통해 대화형 제어를 가능하게 하는 그래프 조건부 이미지-투-비디오 생성 모델 GraphVid를 제안한다.\n  - 상호작용 인식 비디오 생성 모델 훈련을 위해 구조화된 관계형 주석을 포함하는 대규모 상호작용 중심 비디오 데이터셋인 GraphVid-Bench를 구축했다.\n  - GraphVid는 기존 모션 제어 방식보다 적"
+  },
+  {
+    "idx": 9,
+    "type": "paper",
+    "title": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+    "link": "https://arxiv.org/pdf/2607.21579v1",
+    "summary_text": "- 제목: Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$\n- 분류: 논문\n- 핵심 키워드: Barzilai-Borwein, 초선형 수렴, 2차 문제\n- 핵심 포인트:\n  - Barzilai-Borwein(BB) 메서드가 거의 모든 엄격하게 볼록한 2차 문제와 초기화에 대해 초선형 수렴하는지에 대한 오랜 질문에 부정적인 답변을 제시한다.\n  - $n \\geq 4$인 모든 유한 차원에서, BB1 메서드가 수렴하지만 초선형 수렴하지 않는 엄격하게 볼록한 2차 문제와 초기점의 비어있지 않은 열린 집합을 구성하여 증명했다.\n  - 경사도, 오차의 에너지 노름, 목적 함수 간격이 모두 기하 수열로 하한이 정해져 초선형 수렴이 불가능함을 보였으며, 이는 4차원에서의 비공명, 매력적인 7-사이클에 대한 컴퓨터 지원 증명을 기반으로 한다.\n- 기술 스택 태그: 최적화 알고리즘, 수치 최적화, 수학적 증명\n- 개발자 관점 한 줄 평: 널리 사용되는 BB 최적화 알고리즘이 특정 2차 문제 및 고차원($n \\geq 4$)에서 초선형 수렴에 실패할 수 있음을 이론적으로 증명하여, 알고리즘 선택 시 성능 기대"
+  },
+  {
+    "idx": 10,
+    "type": "paper",
+    "title": "Synthetic data generation framework for quality control automation in gravure printing",
+    "link": "https://arxiv.org/pdf/2607.21577v1",
+    "summary_text": "- 제목: Synthetic data generation framework for quality control automation in gravure printing\n- 분류: 논문\n- 핵심 키워드: 합성 데이터, 품질 관리, 그라비아 인쇄\n- 핵심 포인트:\n  - 그라비아 인쇄의 품질 관리는 느리고 비용이 많이 들며 주관적인 수동 검사에 의존하며, 딥러닝 모델 훈련은 실제 산업 결함 이미지 부족으로 어려움을 겪고 있음.\n  - 이러한 한계를 극복하기 위해 그라비아 인쇄 품질 관리에 특화된 새로운 합성 데이터 생성 프레임워크를 제안, 특정 인쇄 결함(주름, 줄무늬, 오정렬 등)의 고품질 이미지를 바운딩 박스 및 주석과 함께 자동 생성함.\n  - 7533개의 합성 데이터셋으로 최신 객체 탐지 모델 RFDETR을 훈련시킨 결과, 실제 산업 테스트 샘플에서 80.9%의 mAP를 달성하여 대규모 수동 데이터 수집 없이도 결함 검사를 자동화하는 제로 코스트, 신속 배포 솔루션을 제공함.\n- 기술 스택 태그: Deep Learning, Object Detection, Synthetic Data\n- 개발자 관점 한 줄 평: 산업 현장의 고질적인 데이터 부족 문제를 합성 데이터로 해결하여, 딥러닝 기반 품질 검사 시스템의 신속한 구축과 비용 절감을 가능하게 하는 실용적인 접근 방식.\n- 참고 링크: https://arxiv.org/pdf/2607.21577v1"
+  }
+]
