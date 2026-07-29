@@ -1,0 +1,72 @@
+[
+  {
+    "idx": 1,
+    "type": "news",
+    "title": "Elon Musk’s xAI sues Minnesota over legislation banning ‘nudification’ technology",
+    "link": "https://nypost.com/2026/07/29/tech/elon-musks-xai-sues-minnesota-over-legislation-banning-nudification-technology/",
+    "summary_text": "- 제목: Elon Musk의 xAI, '누디피케이션' 기술 금지 법안으로 미네소타 주 고소\n- 분류: 뉴스\n- 핵심 키워드: xAI, 미네소타, 누디피케이션\n- 핵심 포인트:\n  - Elon Musk의 xAI가 미네소타 주를 고소했습니다.\n  - 고소의 원인은 미네소타 주가 새로 제정한 법률 때문입니다.\n  - 해당 법률은 AI '누디피케이션' 기술을 금지하고 있습니다.\n- 기술 스택 태그: AI, 법률, 윤리\n- 개발자 관점 한 줄 평: AI 기술의 혁신과 사회적 규제 사이의 충돌이 심화되는 가운데, 기술 개발의 자유와 책임의 경계를 명확히 하는 것이 중요해지고 있음을 보여주는 사례.\n- 참고 링크: https://nypost.com/2026/07/29/tech/elon-musks-xai-sues-minnesota-over-legislation-banning-nudification-technology/"
+  },
+  {
+    "idx": 2,
+    "type": "news",
+    "title": "SK hynix posts record profit for fifth straight quarter",
+    "link": "https://www.upi.com/Top_News/World-News/2026/07/29/sk-hynix/8961785364730/",
+    "summary_text": "- 제목: SK하이닉스, 5분기 연속 최고 실적 기록\n- 분류: 뉴스\n- 핵심 키워드: SK하이닉스, 실적, 매출\n- 핵심 포인트:\n  - SK하이닉스가 5분기 연속으로 분기별 영업이익"
+  },
+  {
+    "idx": 3,
+    "type": "news",
+    "title": "Seoul shares dip nearly 6 pct on extended chip rout amid AI skepticism",
+    "link": "https://www.upi.com/Top_News/World-News/2026/07/29/KOSPI-Korea-Stock-Index-plunged-six-percent-semiconductor-AI-skepticism/8411785363742/",
+    "summary_text": "- 제목: 서울 증시, AI 회의론 속 반도체 침체 장기화로 약 6% 하락\n- 분류: 뉴스\n- 핵심 키워드: 서울 증시, 반도체, AI 회의론\n- 핵심 포인트:\n  - 서울 증시가 수요일에 약 6% 하락했다.\n  - 이는 직전 거래일의 약 11% 폭락에 이은 추가 하락이다.\n  - 이번 증시 하락은 반도체 시장의 장기 침체와 AI 회의론에 기인한다.\n- 기술 스택 태그: N/A\n- 개발자 관점 한 줄 평: AI 관련 기술 투자 및 시장 기대치에 대한 재평가가 진행 중임을 시사하며, 거시 경제 동향이 기술 섹터에 미치는 영향을 주시해야 함.\n- 참고 링크: https://www.upi.com/Top_News/World-News/2026/07/29/KOSPI-Korea-Stock-Index-plunged-six-percent-semiconductor-AI-skepticism/8411785363742/"
+  },
+  {
+    "idx": 4,
+    "type": "news",
+    "title": "Microsoft stock surges 3% after beating Q4 estimates",
+    "link": "https://invezz.com/news/2026/07/29/microsoft-beats-q4-estimates-as-azure-cloud-growth-tops-expectations/",
+    "summary_text": "- 제목: Microsoft stock surges 3% after beating Q4 estimates\n- 분류: 뉴스\n- 핵심 키워드: Microsoft, Azure, Copilot\n- 핵심 포인트:\n  - Microsoft는 4분기 예상치를 상회하는 실적을 달성했다.\n  - Azure 매출은 43% 증가했으며, 연간 매출 1,000억 달러를 돌파했다.\n  - Copilot 사용자는 3천만 명에 도달했다.\n- 기술 스택 태그: Azure, Copilot, Cloud Computing\n- 개발자 관점 한 줄 평: Azure의 견고한 성장과 Copilot의 빠른 사용자 확보는 Microsoft 생태계의 AI 및 클라우드 전략이 시장에서 성공적으로 안착하고 있음을 보여준다.\n- 참고 링크: https://invezz.com/news/2026/07/29/microsoft-beats-q4-estimates-as-azure-cloud-growth-tops-expectations/"
+  },
+  {
+    "idx": 5,
+    "type": "news",
+    "title": "US bans foreign-made humanoid robots, targeting China over national security",
+    "link": "https://www.dailynews.com/2026/07/29/us-ban-foreign-made-humanoid-robots-china/",
+    "summary_text": "- 제목: 미국, 국가 안보를 이유로 외국산 휴머노이드 로봇 수입 금지\n- 분류: 뉴스\n- 핵심 키워드: 미국, 휴머노이드, 수입 금지\n- 핵심 포인트:\n  - 미국 연방통신위원회(FCC)가 국가 안보를 명분으로 외국산 신규 휴머노이드 로봇의 수입을 금지했다.\n  - 이번 수입 금지 조치에는 휴머노이드 로봇 외에 전력 인버터도 포함된다.\n  - 이 조치는 특히 중국을 겨냥한 것으로, 국가 안보 우려가 주된 배경이다.\n- 기술 스택 태그: 로봇공학, AI, 하드웨어 개발\n- 개발자 관점 한 줄 평: 국가 안보를 명분으로 한 휴머노이드 로봇 수입 금지는 국내 로봇 및 AI 기술 개발에 대한 투자와 자립을 촉진할 수 있으나, 글로벌 공급망에는 불확실성을 더할 것이다.\n- 참고 링크: https://www.dailynews.com/2026/07/29/us-ban-foreign-made-humanoid-robots-china/"
+  },
+  {
+    "idx": 6,
+    "type": "paper",
+    "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+    "link": "https://arxiv.org/pdf/2607.26057v1",
+    "summary_text": "- 제목: Pass the Baton: Trajectory-Relayed On-Policy Distillation\n- 분류: 논문\n- 핵심 키워드: On-policy distillation, Relay-OPD, Trajectory\n- 핵심 포인트:\n  - 기존 On-Policy Distillation(OPD)은 학생 모델이"
+  },
+  {
+    "idx": 7,
+    "type": "paper",
+    "title": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "link": "https://arxiv.org/pdf/2607.26055v1",
+    "summary_text": "- 제목: $π\\mathbf{R}^2$: 반응형 실시간 플로우 정책\n- 분류: 논문\n- 핵심 키워드: 반응형, 실시간, 플로우 정책\n- 핵심 포인트:\n  - 기존 대규모 사전 학습 백본 기반의 액션 청킹 플로우"
+  },
+  {
+    "idx": 8,
+    "type": "paper",
+    "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+    "link": "https://arxiv.org/pdf/2607.26052v1",
+    "summary_text": "- 제목: Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA\n- 분류: 논문\n- 핵심 키워드: MoE, LoRA, CARE\n- 핵심 포인트:\n  - 기존 MoE-LoRA는 모든 토큰에 고정"
+  },
+  {
+    "idx": 9,
+    "type": "paper",
+    "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+    "link": "https://arxiv.org/pdf/2607.26043v1",
+    "summary_text": "- 제목: Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis\n- 분류: 논문\n- 핵심 키워드: Mammography, Transfer Learning, DITL\n- 핵심 포인트:\n  - 기존 전이 학습 방식은 유방 촬영술 데이터셋의 특성을 간과하고, 최근 인접성 기반 방법론은 특정 작업에 국한되어 대규모 데이터셋에 대한 확장성이 부족하다는 문제를 해결하기 위해 DITL 프레임워크가 제안되었다.\n  - DITL은 데이터셋에서 파생된 난이도 신호와 인접성 기반 트립플렛 감독을 통합하며, k-최근접 이웃 레이블 순도에 기반한 샘플별 가중치를 할당하는 Adaptive Difficulty-Weighted Cross-Entropy (A-DWCE)와 학습 가능한 마진을 사용하는 Adaptive Neighborhood Representation Triplet (A-NR-Triplet) 두 가지 적응형 구성 요소를 포함한다.\n  - DITL은 하이퍼파라미터 튜닝이 필요 없고, 계산 오버헤드가 적으며, 대규모 VinDR-Mammo 데이터셋에서 유방 밀도 분류에 대한 최첨단 성능을 달성하고 소규모 ROI 데이터셋에서도 일관되고 통계적으로 유의미한 성능 향상을 보여준다.\n- 기술 스택 태그: Transfer Learning, Deep Learning, Machine Learning, Computer Vision\n- 개발자 관점 한 줄 평: 유방암 진단 AI 모델 개발 시, 데이터셋 특성을 반영하고 하이퍼파라미터 튜닝 없이도 높은 성능과 확장성을 제공하여 개발 및 운영 효율성을 크게 향상시킬 수 있는 전이 학습 프레임워크이다.\n- 참고 링크: https://arxiv.org/pdf/2607.26043v1"
+  },
+  {
+    "idx": 10,
+    "type": "paper",
+    "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+    "link": "https://arxiv.org/pdf/2607.26042v1",
+    "summary_text": "- 제목: VetClaw: 수의학 질병 스크리닝을 위한 엣지-클라우드 멀티모달 에이전트 시스템\n- 분류: 논문\n- 핵심 키워드: Edge-Cloud, Multimodal, Agentic\n- 핵심 포인트:"
+  }
+]
